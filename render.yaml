@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: go-backend-api
+    name: go-backend-api-render
     runtime: docker
     dockerfilePath: ./Dockerfile
     dockerContext: .

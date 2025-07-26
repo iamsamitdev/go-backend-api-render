@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+main
 
 # Test binary, built with `go test -c`
 *.test
@@ -36,13 +37,13 @@ Thumbs.db
 # Log files
 *.log
 
-# Environment files
+# Environment files (Render will provide these)
 .env
 .env.local
 .env.development
 .env.production
 
-# Docker files
+# Docker files (not needed for Render)
 Dockerfile
 docker-compose*.yml
 .dockerignore
@@ -57,4 +58,16 @@ README.md
 
 # Temporary files
 tmp/
-temp/ 
+temp/
+
+# Coverage reports
+coverage.txt
+coverage.out
+
+# Air live reload tool
+.air.toml
+tmp/
+
+# Render-specific ignores
+.render/
+render.yaml 

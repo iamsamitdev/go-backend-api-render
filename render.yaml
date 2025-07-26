@@ -2,7 +2,7 @@ services:
   - type: web
     name: go-backend-api
     runtime: docker
-    dockerfilePath: ./Dockerfile.render
+    dockerfilePath: ./Dockerfile
     dockerContext: .
     region: singapore # หรือ oregon, frankfurt
     healthCheckPath: /health
